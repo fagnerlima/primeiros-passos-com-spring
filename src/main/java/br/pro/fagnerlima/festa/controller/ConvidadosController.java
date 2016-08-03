@@ -18,7 +18,6 @@ public class ConvidadosController {
 	public ModelAndView listar() {
 		ModelAndView mv = new ModelAndView("ListaConvidados");
 		mv.addObject("convidados", convidados.todos());
-		mv.addObject(new Convidado());
 		
 		return mv;
 	}
